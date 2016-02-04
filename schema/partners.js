@@ -38,6 +38,9 @@ const Partners = {
     eligible_for_carousel: {
       type: GraphQLBoolean,
     },
+    active: {
+      type: GraphQLBoolean,
+    },
     has_full_profile: {
       type: GraphQLBoolean,
     },
