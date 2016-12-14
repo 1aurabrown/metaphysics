@@ -559,5 +559,68 @@ describe('Artwork type', () => {
           });
         });
     });
+
+    it('returns false if artwork price is a range with multiple editions.', () => {
+      artwork.price = '$200 - $300';
+      artwork.edition_sets = [{}];
+      gravity
+        // Artwork
+        .onCall(0)
+        .returns(Promise.resolve(assign({}, artwork)));
+
+      return runQuery(query)
+        .then(data => {
+          expect(data).toEqual({
+            artwork: {
+              id: 'richard-prince-untitled-portrait',
+              is_price_range: false,
+            },
+          });
+        });
+    });
+  });
+
+  describe('A title', () => {
+    const query = `
+      {
+        artwork(id: "richard-prince-untitled-portrait") {
+          title
+        }
+      }
+    `;
+
+    it('is Untitled when its title is null', () => {
+      artwork.title = null;
+      gravity
+        // Artwork
+        .onCall(0)
+        .returns(Promise.resolve(assign({}, artwork)));
+
+      return runQuery(query)
+        .then(data => {
+          expect(data).toEqual({
+            artwork: {
+              title: 'Untitled',
+            },
+          });
+        });
+    });
+
+    it('is Untitled title when its title is empty', () => {
+      artwork.title = '';
+      gravity
+        // Artwork
+        .onCall(0)
+        .returns(Promise.resolve(assign({}, artwork)));
+
+      return runQuery(query)
+        .then(data => {
+          expect(data).toEqual({
+            artwork: {
+              title: 'Untitled',
+            },
+          });
+        });
+    });
   });
 });
