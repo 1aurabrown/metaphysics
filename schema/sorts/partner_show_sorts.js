@@ -4,6 +4,36 @@ export default {
   type: new GraphQLEnumType({
     name: 'PartnerShowSorts',
     values: {
+      CREATED_AT_ASC: {
+        value: 'created_at',
+      },
+      CREATED_AT_DESC: {
+        value: '-created_at',
+      },
+      END_AT_ASC: {
+        value: 'end_at',
+      },
+      END_AT_DESC: {
+        value: '-end_at',
+      },
+      START_AT_ASC: {
+        value: 'start_at',
+      },
+      START_AT_DESC: {
+        value: '-start_at',
+      },
+      NAME_ASC: {
+        value: 'name',
+      },
+      NAME_DESC: {
+        value: '-name',
+      },
+      PUBLISH_AT_ASC: {
+        value: 'publish_at',
+      },
+      PUBLISH_AT_DESC: {
+        value: '-publish_at',
+      },
       created_at_asc: {
         deprecationReason: 'use capital enums',
         value: 'created_at',
@@ -42,36 +72,6 @@ export default {
       },
       publish_at_desc: {
         deprecationReason: 'use capital enums',
-        value: '-publish_at',
-      },
-      CREATED_AT_ASC: {
-        value: 'created_at',
-      },
-      CREATED_AT_DESC: {
-        value: '-created_at',
-      },
-      END_AT_ASC: {
-        value: 'end_at',
-      },
-      END_AT_DESC: {
-        value: '-end_at',
-      },
-      START_AT_ASC: {
-        value: 'start_at',
-      },
-      START_AT_DESC: {
-        value: '-start_at',
-      },
-      NAME_ASC: {
-        value: 'name',
-      },
-      NAME_DESC: {
-        value: '-name',
-      },
-      PUBLISH_AT_ASC: {
-        value: 'publish_at',
-      },
-      PUBLISH_AT_DESC: {
         value: '-publish_at',
       },
     },

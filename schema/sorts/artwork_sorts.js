@@ -4,6 +4,42 @@ export default {
   type: new GraphQLEnumType({
     name: 'ArtworkSorts',
     values: {
+      TITLE_ASC: {
+        value: 'title',
+      },
+      TITLE_DESC: {
+        value: '-title',
+      },
+      CREATED_AT_ASC: {
+        value: 'created_at',
+      },
+      CREATED_AT_DESC: {
+        value: '-created_at',
+      },
+      DELETED_AT_ASC: {
+        value: 'deleted_at',
+      },
+      DELETED_AT_DESC: {
+        value: '-deleted_at',
+      },
+      ICONICITY_DESC: {
+        value: '-iconicity',
+      },
+      MERCHANDISABILITY_DESC: {
+        value: '-merchandisability',
+      },
+      PUBLISHED_AT_ASC: {
+        value: 'published_at',
+      },
+      PUBLISHED_AT_DESC: {
+        value: '-published_at',
+      },
+      PARTNER_UPDATED_AT_DESC: {
+        value: '-partner_updated_at',
+      },
+      AVAILABILITY_DESC: {
+        value: '-availability',
+      },
       title_asc: {
         deprecationReason: 'use capital enums',
         value: 'title',
@@ -50,42 +86,6 @@ export default {
       },
       availability_desc: {
         deprecationReason: 'use capital enums',
-        value: '-availability',
-      },
-      TITLE_ASC: {
-        value: 'title',
-      },
-      TITLE_DESC: {
-        value: '-title',
-      },
-      CREATED_AT_ASC: {
-        value: 'created_at',
-      },
-      CREATED_AT_DESC: {
-        value: '-created_at',
-      },
-      DELETED_AT_ASC: {
-        value: 'deleted_at',
-      },
-      DELETED_AT_DESC: {
-        value: '-deleted_at',
-      },
-      ICONICITY_DESC: {
-        value: '-iconicity',
-      },
-      MERCHANDISABILITY_DESC: {
-        value: '-merchandisability',
-      },
-      PUBLISHED_AT_ASC: {
-        value: 'published_at',
-      },
-      PUBLISHED_AT_DESC: {
-        value: '-published_at',
-      },
-      PARTNER_UPDATED_AT_DESC: {
-        value: '-partner_updated_at',
-      },
-      AVAILABILITY_DESC: {
         value: '-availability',
       },
     },

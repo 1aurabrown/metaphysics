@@ -4,6 +4,15 @@ export default {
   type: new GraphQLEnumType({
     name: 'ArtistSorts',
     values: {
+      SORTABLE_ID_ASC: {
+        value: 'sortable_id',
+      },
+      SORTABLE_ID_DESC: {
+        value: '-sortable_id',
+      },
+      TRENDING_DESC: {
+        value: '-trending',
+      },
       sortable_id_asc: {
         deprecationReason: 'use capital enums',
         value: 'sortable_id',
@@ -14,15 +23,6 @@ export default {
       },
       trending_desc: {
         deprecationReason: 'use capital enums',
-        value: '-trending',
-      },
-      SORTABLE_ID_ASC: {
-        value: 'sortable_id',
-      },
-      SORTABLE_ID_DESC: {
-        value: '-sortable_id',
-      },
-      TRENDING_DESC: {
         value: '-trending',
       },
     },
