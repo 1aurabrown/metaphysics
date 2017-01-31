@@ -972,13 +972,13 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codemirror-graphql@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/codemirror-graphql/-/codemirror-graphql-0.5.8.tgz#b57a56841b32fb571919f116ba6ee0c7fb97a581"
+codemirror-graphql@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/codemirror-graphql/-/codemirror-graphql-0.6.2.tgz#c9ab86093e03f6fea4295aee7515dd495dc7d6de"
 
-codemirror@^5.15.2:
-  version "5.21.0"
-  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.21.0.tgz#9ec4caeda50807575b2115226bf12414f85d2246"
+codemirror@5.23.0:
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.23.0.tgz#ac9b6b2e163a79e915b44cf0f43cd115cf6982dc"
 
 colors@0.6.x, colors@0.x.x, colors@~0.6.2:
   version "0.6.2"
@@ -1868,13 +1868,13 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-graphiql@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/graphiql/-/graphiql-0.8.0.tgz#9a6ff1ca15dec23d5981967735bb2ea465271b1e"
+graphiql@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/graphiql/-/graphiql-0.9.1.tgz#38fb281b8e2c5697087b75f969eec19e81c21bbe"
   dependencies:
-    codemirror "^5.15.2"
-    codemirror-graphql "^0.5.8"
-    marked "^0.3.5"
+    codemirror "5.23.0"
+    codemirror-graphql "0.6.2"
+    marked "0.3.6"
 
 graphql-relay@^0.4.3:
   version "0.4.4"
@@ -2873,7 +2873,7 @@ marked-terminal@^1.6.2:
     lodash.assign "^4.2.0"
     node-emoji "^1.4.1"
 
-marked@^0.3.4, marked@^0.3.5, marked@^0.3.6:
+marked@0.3.6, marked@^0.3.4, marked@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
